@@ -7,7 +7,7 @@ import java.util.Set;
  * Class to find the shortest path within a graph.
  */
 public class Dijkstra {
-  static final int M = Integer.MAX_VALUE;
+  public static final int M = Integer.MAX_VALUE;
   private int[][] graph;
   private int dimension;
   private int[][] lengthArray = null;
@@ -88,7 +88,7 @@ public class Dijkstra {
    * @param s set of ints
    * @return minimum index
    */
-  static int getMinimumIndex(final int[] thisL, final Set<Integer> s) {
+  public static int getMinimumIndex(final int[] thisL, final Set<Integer> s) {
     int u = M;
     final int length = thisL.length;
     for (int i = 0; i < length; ++i) {
